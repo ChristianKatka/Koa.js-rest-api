@@ -43,13 +43,10 @@ export const getUsersCarData = async (ctx: Context, next: Next) => {
     });
 
   ctx.response.body = {
-    carsImages: userCarsImages,
     carsInfo: userCarInfo,
+    carsImages: userCarsImages,
   };
 };
-
-
-
 
 // CAR IMAGES
 function loopCarIds(carId: string) {
