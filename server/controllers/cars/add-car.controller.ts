@@ -1,5 +1,5 @@
 
-// ADDS CAR TO A USER
+// Add car to a user
 
 import { Context, Next } from "koa";
 import uuid from "uuid";

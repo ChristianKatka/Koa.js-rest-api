@@ -1,12 +1,14 @@
+// might be useless controller
+
 import { Context, Next } from "koa";
 import { docClient } from "../../aws";
-import uuid from "uuid";
+
 
 export const getCars = async (ctx: Context, next: Next) => {
   const params = {
     TableName: "cars",
     Key: {
-      id: "asdij8w8hdiuandoio0",
+      carId: "asdij8w8hdiuandoio0",
     },
   };
 
